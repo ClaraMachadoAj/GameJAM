@@ -1,15 +1,44 @@
 # Godot 4+ specific ignores
 .godot/
 
-# Godot-specific ignores
-.import/
-export.cfg
-export_presets.cfg
+# Godot project files
+*.import
+*.import.res
+*.tscn.export
+*.tscn.res
+*.scn.export
+*.scn.res
+*.sca
+*.backup
+*.import.cfg
 
-# Imported translations (automatically generated from CSV files)
-*.translation
+# Godot editor settings
+*.import.cfg
+*.import.res
+*.import
 
-# Mono-specific ignores
-.mono/
-data_*/
-mono_crash.*.json
+# Godot auto-generated files
+.godot
+thumbs
+.project.godot
+*.import
+
+# Compiled files
+*.exe
+*.apk
+*.dll
+*.so
+*.dylib
+
+# Logs and temporary files
+*.log
+*.tmp
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Build directories
+/bin/
+/build/
+/export/
