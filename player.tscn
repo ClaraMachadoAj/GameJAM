@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://d1tj4qa82irkc"]
+
+[ext_resource type="Script" path="res://Scripts/Player.gd" id="1_h5i14"]
+[ext_resource type="Texture2D" uid="uid://dx1uhep3u7exj" path="res://Assets/anim-nme-ghost.png" id="2_e4rh7"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_phpa6"]
+radius = 21.095
+
+[node name="Player" type="CharacterBody2D"]
+script = ExtResource("1_h5i14")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_phpa6")
+
+[node name="Anim-nme-ghost" type="Sprite2D" parent="."]
+position = Vector2(8, 2)
+texture = ExtResource("2_e4rh7")
