@@ -476,7 +476,9 @@ parameters/idle/blend_position = Vector2(0, 0)
 parameters/walk/blend_position = Vector2(0, 0)
 
 [node name="PointLight2D" type="PointLight2D" parent="."]
-position = Vector2(0, -1)
+position = Vector2(3.38813e-21, -7)
 rotation = 3.14159
 scale = Vector2(1.31288, 1.3513)
 texture = SubResource("GradientTexture2D_86qwp")
+
+[node name="Camera2D" type="Camera2D" parent="."]
