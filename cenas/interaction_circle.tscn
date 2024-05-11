@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://ccel2vgw6q7qj"]
+
+[ext_resource type="Script" path="res://scripts/interactionCircle.gd" id="1_vveg1"]
+[ext_resource type="Texture2D" uid="uid://canhucg2cpv1" path="res://images/minecraft steve.png" id="2_612so"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_eu42s"]
+
+[node name="interactionCircle" type="Area2D"]
+collision_layer = 2
+monitoring = false
+script = ExtResource("1_vveg1")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_eu42s")
+
+[node name="MinecraftSteve" type="Sprite2D" parent="."]
+scale = Vector2(0.0621345, 0.0570539)
+texture = ExtResource("2_612so")
+
+[node name="Label" type="Label" parent="."]
+offset_right = 40.0
+offset_bottom = 23.0
+text = "yooo the code is 123"

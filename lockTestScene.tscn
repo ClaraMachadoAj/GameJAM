@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://vs5fboblw53b"]
+
+[ext_resource type="Texture2D" uid="uid://dyei6736x1vb0" path="res://images/4numbers.png" id="1_h1vbh"]
+
+[node name="Sprite2D" type="Sprite2D"]
+texture = ExtResource("1_h1vbh")
+
+[node name="A" type="AnimatedSprite2D" parent="."]
+
+[node name="B" type="AnimatedSprite2D" parent="."]
+
+[node name="C" type="AnimatedSprite2D" parent="."]
+
+[node name="D" type="AnimatedSprite2D" parent="."]

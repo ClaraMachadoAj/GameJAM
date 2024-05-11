@@ -1,7 +1,7 @@
-[gd_scene load_steps=27 format=3 uid="uid://dfkqu2b8gg230"]
+[gd_scene load_steps=28 format=3 uid="uid://dfkqu2b8gg230"]
 
-[ext_resource type="Script" path="res://character_body_2d.gd" id="1_dwskr"]
-[ext_resource type="Texture2D" uid="uid://k4k2q6com4gw" path="res://character/assets/player.png" id="1_vxh2w"]
+[ext_resource type="Script" path="res://scripts/character_body_2d.gd" id="1_dwskr"]
+[ext_resource type="Texture2D" uid="uid://dmrtundrs15nm" path="res://character/assets/player.png" id="1_vxh2w"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ub44i"]
 size = Vector2(8, 3)
@@ -447,6 +447,9 @@ gradient = SubResource("Gradient_om5ad")
 fill = 1
 fill_from = Vector2(0.5, 0.5)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_c1yk4"]
+size = Vector2(22, 30)
+
 [node name="Character" type="CharacterBody2D" node_paths=PackedStringArray("_animation_tree")]
 position = Vector2(-1, 0)
 script = ExtResource("1_dwskr")
@@ -482,3 +485,23 @@ scale = Vector2(1.31288, 1.3513)
 texture = SubResource("GradientTexture2D_86qwp")
 
 [node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="InteractionComponents" type="Node2D" parent="."]
+
+[node name="InteractionArea" type="Area2D" parent="InteractionComponents"]
+collision_layer = 0
+collision_mask = 2
+monitorable = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InteractionComponents/InteractionArea"]
+position = Vector2(0, -7)
+shape = SubResource("RectangleShape2D_c1yk4")
+
+[node name="InteractLabel" type="Label" parent="InteractionComponents"]
+offset_left = -14.0
+offset_top = -44.0
+offset_right = 26.0
+offset_bottom = -21.0
+
+[connection signal="area_entered" from="InteractionComponents/InteractionArea" to="." method="_on_interaction_area_area_entered"]
+[connection signal="area_exited" from="InteractionComponents/InteractionArea" to="." method="_on_interaction_area_area_exited"]
