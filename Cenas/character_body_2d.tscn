@@ -1,23 +1,31 @@
 [gd_scene load_steps=28 format=3 uid="uid://ds706xb4xjbg3"]
 
 [ext_resource type="Script" path="res://Cenas/character_body_2d.gd" id="1_dwskr"]
+<<<<<<< Updated upstream
 [ext_resource type="Texture2D" uid="uid://dl4d4are5e7lk" path="res://character/assets/Group 25.png" id="2_xovd8"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ub44i"]
 size = Vector2(16, 4)
+=======
+[ext_resource type="Texture2D" uid="uid://drr48ioj3xlpa" path="res://character/assets/player.png" id="1_vxh2w"]
+>>>>>>> Stashed changes
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_cyux3"]
 radius = 25.0
 
-[sub_resource type="Gradient" id="Gradient_om5ad"]
-offsets = PackedFloat32Array(0, 0.837662)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ub44i"]
+size = Vector2(8, 3)
+
+[sub_resource type="Gradient" id="Gradient_awi4q"]
+offsets = PackedFloat32Array(0, 0.694805)
 colors = PackedColorArray(1, 1, 1, 1, 0, 0, 0, 1)
 
-[sub_resource type="GradientTexture2D" id="GradientTexture2D_86qwp"]
-gradient = SubResource("Gradient_om5ad")
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_duip1"]
+gradient = SubResource("Gradient_awi4q")
 fill = 1
 fill_from = Vector2(0.5, 0.5)
 
+<<<<<<< Updated upstream
 [sub_resource type="Animation" id="Animation_w523m"]
 length = 0.001
 tracks/0/type = "value"
@@ -412,12 +420,17 @@ states/idle/node = SubResource("AnimationNodeBlendSpace2D_npxik")
 states/idle/position = Vector2(300, 78)
 states/walk/node = SubResource("AnimationNodeBlendSpace2D_q07mm")
 states/walk/position = Vector2(300, 145)
+=======
+[sub_resource type="CircleShape2D" id="CircleShape2D_cyux3"]
+radius = 14.0357
+>>>>>>> Stashed changes
 
 [node name="Character" type="CharacterBody2D" node_paths=PackedStringArray("_animation_tree")]
 position = Vector2(-1, 0)
 script = ExtResource("1_dwskr")
 _animation_tree = NodePath("AnimationTree")
 
+<<<<<<< Updated upstream
 [node name="Collision" type="CollisionShape2D" parent="."]
 show_behind_parent = true
 position = Vector2(2, -1)
@@ -432,19 +445,62 @@ visible = false
 
 [node name="InteractionArea" type="Area2D" parent="InteractionComponents"]
 visible = false
+=======
+[node name="Animation" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_6ywnq")
+}
+
+[node name="AnimationTree" type="AnimationTree" parent="."]
+tree_root = SubResource("AnimationNodeStateMachine_vvguh")
+anim_player = NodePath("../Animation")
+parameters/idle/blend_position = Vector2(0, 0)
+parameters/walk/blend_position = Vector2(0, 0)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+scale = Vector2(852.074, 65.3333)
+
+[node name="Collision" type="CollisionShape2D" parent="."]
+show_behind_parent = true
+position = Vector2(0, -0.5)
+shape = SubResource("RectangleShape2D_ub44i")
+
+[node name="Texture" type="Sprite2D" parent="."]
+top_level = true
+light_mask = 2
+visibility_layer = 2
+z_index = 4
+texture_filter = 1
+position = Vector2(-0.5, -17)
+texture = ExtResource("1_vxh2w")
+hframes = 6
+vframes = 10
+
+[node name="PointLight2D" type="PointLight2D" parent="Texture"]
+position = Vector2(0.5, 12)
+energy = 4.0
+texture = SubResource("GradientTexture2D_duip1")
+
+[node name="InteractionArea" type="Area2D" parent="."]
+>>>>>>> Stashed changes
 collision_layer = 0
 collision_mask = 2
 monitorable = false
 
+<<<<<<< Updated upstream
 [node name="CollisionShape2D" type="CollisionShape2D" parent="InteractionComponents/InteractionArea"]
 visible = false
 position = Vector2(1, -16)
+=======
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InteractionArea"]
+visible = false
+position = Vector2(0, -7)
+>>>>>>> Stashed changes
 shape = SubResource("CircleShape2D_cyux3")
 
-[node name="InteractLabel" type="Label" parent="InteractionComponents"]
-offset_right = 40.0
-offset_bottom = 23.0
+[node name="InteractionComponents" type="Node2D" parent="."]
 
+<<<<<<< Updated upstream
 [node name="Texture" type="Sprite2D" parent="."]
 light_mask = 2
 visibility_layer = 2
@@ -476,3 +532,13 @@ parameters/walk/blend_position = Vector2(0, 0)
 
 [connection signal="area_entered" from="InteractionComponents/InteractionArea" to="." method="_on_interaction_area_area_entered"]
 [connection signal="area_exited" from="InteractionComponents/InteractionArea" to="." method="_on_interaction_area_area_exited"]
+=======
+[node name="InteractLabel" type="Label" parent="InteractionComponents"]
+offset_left = 1.0
+offset_top = -5.0
+offset_right = 41.0
+offset_bottom = 18.0
+
+[connection signal="area_entered" from="InteractionArea" to="." method="_on_interaction_area_area_entered"]
+[connection signal="area_exited" from="InteractionArea" to="." method="_on_interaction_area_area_exited"]
+>>>>>>> Stashed changes

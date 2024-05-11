@@ -7,13 +7,23 @@
 [node name="Cena" type="Node2D"]
 position = Vector2(157, 111)
 
-[node name="Character" parent="." instance=ExtResource("1_pgkmb")]
-z_index = 1
-position = Vector2(28, -9)
-
 [node name="Node2D" parent="." instance=ExtResource("2_rncge")]
 z_index = -2
+z_as_relative = false
 texture_filter = 1
+position = Vector2(-15, 5)
 scale = Vector2(1.01669, 1)
 
+[node name="Character" parent="." instance=ExtResource("1_pgkmb")]
+z_as_relative = false
+position = Vector2(-156, -124)
+scale = Vector2(-7.70954, -7.03078)
+
 [node name="INTERACTIONOBJECT" parent="." instance=ExtResource("3_n426x")]
+position = Vector2(-278, -226)
+interact_label = ""
+
+[node name="MIRRORINTERACTION" parent="." instance=ExtResource("3_n426x")]
+position = Vector2(-602, -233)
+interact_label = ""
+interact_type = "Miror"

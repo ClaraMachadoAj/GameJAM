@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://cixdlrcl35ige"]
+
+[ext_resource type="Script" path="res://Cenas/imagem_espelho.gd" id="1_14xlb"]
+[ext_resource type="Texture2D" uid="uid://beuc4ye50wkmd" path="res://Assets/gamejam.png" id="1_aalwl"]
+
+[node name="Imagem_Espelho" type="Node2D"]
+script = ExtResource("1_14xlb")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.60304, 0.616049)
+texture = ExtResource("1_aalwl")
+
+[node name="Camera2D" type="Camera2D" parent="."]

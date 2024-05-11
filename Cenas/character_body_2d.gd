@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
 @export_category("Variables")
-@export var _move_speed: float = 64.0
+@export var _move_speed: float = 215
 #@export var _run_speed_multiplier: float = 2.0
 
 @export var _acceleration: float = 0.8
@@ -25,8 +25,10 @@ func _physics_process(_delta: float) -> void:
 
 	#then
 	for i in all_interactions:
-		if i.interact_type == "lockType" and Input.is_key_pressed(KEY_SHIFT):
-			print("works")
+		if i.interact_type == "Lock" and Input.is_key_pressed(KEY_F):
+			get_tree().change_scene_to_file("res://Cenas/control.tscn")
+		if i.interact_type == "Miror" and Input.is_key_pressed(KEY_F):
+			get_tree().change_scene_to_file("res://Cenas/imagem_espelho.tscn")
 
 func _move() -> void:
 	var _direction: Vector2 = Vector2(

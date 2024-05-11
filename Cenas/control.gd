@@ -166,6 +166,11 @@ func _on_but_go_pressed():
 						$Chave.text = "Unlocked"
 						$Chave.modulate = Color(0,255,0)
 						
+						get_tree().change_scene_to_file("res://Cenas/cena.tscn")
 					
 	
 	
+
+
+func _on_but_sair_pressed():
+	get_tree().change_scene_to_file("res://Cenas/cena.tscn")
