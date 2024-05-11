@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://bk5tew67l2v48"]
+
+[ext_resource type="PackedScene" uid="uid://ds706xb4xjbg3" path="res://Cenas/character_body_2d.tscn" id="1_pgkmb"]
+[ext_resource type="PackedScene" uid="uid://b8gcbpa4qxmq1" path="res://Cenas/node_2d.tscn" id="2_rncge"]
+
+[node name="Cena" type="Node2D"]
+position = Vector2(157, 111)
+
+[node name="Character" parent="." instance=ExtResource("1_pgkmb")]
+z_index = 1
+position = Vector2(28, -9)
+
+[node name="Node2D" parent="." instance=ExtResource("2_rncge")]
+z_index = -2
+texture_filter = 1
+scale = Vector2(1.01669, 1)

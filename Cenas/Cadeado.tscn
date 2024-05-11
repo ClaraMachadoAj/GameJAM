@@ -1,0 +1,231 @@
+[gd_scene load_steps=3 format=3 uid="uid://dedbbdv10b3ww"]
+
+[ext_resource type="Script" path="res://Cenas/Cadeado.gd" id="1_c8say"]
+[ext_resource type="Script" path="res://Cenas/Node.gd" id="2_nubsx"]
+
+[node name="Control" type="Node2D"]
+script = ExtResource("1_c8say")
+
+[node name="Node" type="Node" parent="."]
+script = ExtResource("2_nubsx")
+
+[node name="Key_5" type="Label" parent="Node"]
+offset_left = 54.0
+offset_top = -131.0
+offset_right = 94.0
+offset_bottom = -108.0
+text = "0
+"
+
+[node name="Key_3" type="Label" parent="Node"]
+offset_left = -8.0
+offset_top = -131.0
+offset_right = 32.0
+offset_bottom = -108.0
+text = "0"
+
+[node name="Key_1" type="Label" parent="Node"]
+offset_left = -70.0
+offset_top = -131.0
+offset_right = -30.0
+offset_bottom = -108.0
+text = "0"
+
+[node name="Chave" type="Label" parent="Node"]
+offset_left = -27.0
+offset_top = -164.0
+offset_right = 28.0
+offset_bottom = -141.0
+text = "Locked
+"
+
+[node name="Key_2" type="Label" parent="Node"]
+offset_left = -39.0
+offset_top = -131.0
+offset_right = 1.0
+offset_bottom = -108.0
+text = "0"
+
+[node name="Key_4" type="Label" parent="Node"]
+offset_left = 23.0
+offset_top = -131.0
+offset_right = 63.0
+offset_bottom = -108.0
+text = "0"
+
+[node name="but_1" type="TextureButton" parent="Node"]
+offset_left = -54.0
+offset_top = -88.0
+offset_right = -14.0
+offset_bottom = -48.0
+
+[node name="Key_5" type="Label" parent="Node/but_1"]
+offset_left = 15.0
+offset_top = 8.0
+offset_right = 55.0
+offset_bottom = 31.0
+text = "1
+"
+
+[node name="but_2" type="TextureButton" parent="Node"]
+offset_left = -23.0
+offset_top = -88.0
+offset_right = 17.0
+offset_bottom = -48.0
+
+[node name="Key_5" type="Label" parent="Node/but_2"]
+offset_left = 15.0
+offset_top = 8.0
+offset_right = 55.0
+offset_bottom = 31.0
+text = "2
+"
+
+[node name="but_3" type="TextureButton" parent="Node"]
+offset_left = 8.0
+offset_top = -88.0
+offset_right = 48.0
+offset_bottom = -48.0
+
+[node name="Key_5" type="Label" parent="Node/but_3"]
+offset_left = 15.0
+offset_top = 8.0
+offset_right = 55.0
+offset_bottom = 31.0
+text = "3"
+
+[node name="but_4" type="TextureButton" parent="Node"]
+offset_left = -54.0
+offset_top = -63.0
+offset_right = -14.0
+offset_bottom = -23.0
+
+[node name="Key_5" type="Label" parent="Node/but_4"]
+offset_left = 15.0
+offset_top = 8.0
+offset_right = 55.0
+offset_bottom = 31.0
+text = "4
+"
+
+[node name="but_5" type="TextureButton" parent="Node"]
+offset_left = -24.0
+offset_top = -63.0
+offset_right = 16.0
+offset_bottom = -23.0
+
+[node name="Key_5" type="Label" parent="Node/but_5"]
+offset_left = 15.0
+offset_top = 8.0
+offset_right = 55.0
+offset_bottom = 31.0
+text = "5
+"
+
+[node name="but_6" type="TextureButton" parent="Node"]
+offset_left = 8.0
+offset_top = -63.0
+offset_right = 48.0
+offset_bottom = -23.0
+
+[node name="Key_5" type="Label" parent="Node/but_6"]
+offset_left = 15.0
+offset_top = 8.0
+offset_right = 55.0
+offset_bottom = 31.0
+text = "6
+"
+
+[node name="but_8" type="TextureButton" parent="Node"]
+offset_left = -24.0
+offset_top = -40.0
+offset_right = 16.0
+
+[node name="Key_5" type="Label" parent="Node/but_8"]
+offset_left = 15.0
+offset_top = 8.0
+offset_right = 55.0
+offset_bottom = 31.0
+text = "8
+"
+
+[node name="but_7" type="TextureButton" parent="Node"]
+offset_left = -54.0
+offset_top = -40.0
+offset_right = -14.0
+
+[node name="Key_5" type="Label" parent="Node/but_7"]
+offset_left = 15.0
+offset_top = 8.0
+offset_right = 55.0
+offset_bottom = 31.0
+text = "7
+"
+
+[node name="but_9" type="TextureButton" parent="Node"]
+offset_left = 8.0
+offset_top = -40.0
+offset_right = 48.0
+
+[node name="Key_5" type="Label" parent="Node/but_9"]
+offset_left = 15.0
+offset_top = 8.0
+offset_right = 55.0
+offset_bottom = 31.0
+text = "9
+"
+
+[node name="but_10" type="TextureButton" parent="Node"]
+offset_left = -24.0
+offset_top = -19.0
+offset_right = 16.0
+offset_bottom = 21.0
+
+[node name="Key_5" type="Label" parent="Node/but_10"]
+offset_left = 15.0
+offset_top = 8.0
+offset_right = 55.0
+offset_bottom = 31.0
+text = "0
+"
+
+[node name="but_11" type="TextureButton" parent="Node"]
+offset_left = -55.0
+offset_top = -16.0
+offset_right = -15.0
+offset_bottom = 24.0
+
+[node name="Key_5" type="Label" parent="Node/but_11"]
+offset_left = 5.0
+offset_top = 4.0
+offset_right = 45.0
+offset_bottom = 27.0
+text = "Del
+"
+
+[node name="but_12" type="TextureButton" parent="Node"]
+offset_left = 8.0
+offset_top = -19.0
+offset_right = 48.0
+offset_bottom = 21.0
+
+[node name="Key_5" type="Label" parent="Node/but_12"]
+offset_left = 12.0
+offset_top = 8.0
+offset_right = 52.0
+offset_bottom = 31.0
+text = "Go
+"
+
+[connection signal="pressed" from="Node/but_1" to="." method="_on_but_1_pressed"]
+[connection signal="pressed" from="Node/but_2" to="." method="_on_but_2_pressed"]
+[connection signal="pressed" from="Node/but_3" to="." method="_on_but_3_pressed"]
+[connection signal="pressed" from="Node/but_4" to="." method="_on_but_4_pressed"]
+[connection signal="pressed" from="Node/but_5" to="." method="_on_but_5_pressed"]
+[connection signal="pressed" from="Node/but_6" to="." method="_on_but_6_pressed"]
+[connection signal="pressed" from="Node/but_8" to="." method="_on_but_8_pressed"]
+[connection signal="pressed" from="Node/but_7" to="." method="_on_but_7_pressed"]
+[connection signal="pressed" from="Node/but_9" to="." method="_on_but_9_pressed"]
+[connection signal="pressed" from="Node/but_10" to="." method="_on_but_10_pressed"]
+[connection signal="pressed" from="Node/but_11" to="." method="_on_but_11_pressed"]
+[connection signal="pressed" from="Node/but_12" to="." method="_on_but_12_pressed"]
