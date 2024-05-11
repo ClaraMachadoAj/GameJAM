@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://o3gqft1wt0ag"]
+
+[ext_resource type="PackedScene" uid="uid://dfkqu2b8gg230" path="res://character_body_2d.tscn" id="1_l2u6v"]
+[ext_resource type="PackedScene" uid="uid://bcep8m8bnl1sb" path="res://node_2d.tscn" id="2_n7wy5"]
+
+[node name="Cena" type="Node2D"]
+position = Vector2(157, 111)
+
+[node name="Character" parent="." instance=ExtResource("1_l2u6v")]
+z_index = 4
+position = Vector2(28, -9)
+
+[node name="Node2D" parent="." instance=ExtResource("2_n7wy5")]
+show_behind_parent = true
+top_level = true
+visibility_layer = 2
+z_index = 3
+position = Vector2(36, 5)
