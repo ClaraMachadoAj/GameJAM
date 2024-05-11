@@ -12,7 +12,6 @@ grow_vertical = 2
 script = ExtResource("1_46tu2")
 
 [node name="Key_3" type="Label" parent="."]
-layout_mode = 0
 offset_left = 27.0
 offset_top = -131.0
 offset_right = 67.0
@@ -20,14 +19,12 @@ offset_bottom = -108.0
 text = "0"
 
 [node name="Key_1" type="Label" parent="."]
-layout_mode = 0
 offset_left = -40.0
 offset_top = -131.0
 offset_bottom = -108.0
 text = "0"
 
 [node name="Chave" type="Label" parent="."]
-layout_mode = 0
 offset_left = -27.0
 offset_top = -164.0
 offset_right = 28.0
@@ -36,7 +33,6 @@ text = "Waiting...
 "
 
 [node name="Key_2" type="Label" parent="."]
-layout_mode = 0
 offset_left = -8.0
 offset_top = -131.0
 offset_right = 32.0
@@ -44,14 +40,12 @@ offset_bottom = -108.0
 text = "0"
 
 [node name="but_2" type="TextureButton" parent="."]
-layout_mode = 0
 offset_left = -23.0
 offset_top = -88.0
 offset_right = 17.0
 offset_bottom = -48.0
 
 [node name="Key_5" type="Label" parent="but_2"]
-layout_mode = 0
 offset_left = 15.0
 offset_top = 8.0
 offset_right = 55.0
@@ -60,14 +54,12 @@ text = "2
 "
 
 [node name="but_3" type="TextureButton" parent="."]
-layout_mode = 0
 offset_left = 8.0
 offset_top = -88.0
 offset_right = 48.0
 offset_bottom = -48.0
 
 [node name="Key_5" type="Label" parent="but_3"]
-layout_mode = 0
 offset_left = 15.0
 offset_top = 8.0
 offset_right = 55.0
@@ -75,14 +67,12 @@ offset_bottom = 31.0
 text = "3"
 
 [node name="but_4" type="TextureButton" parent="."]
-layout_mode = 0
 offset_left = -54.0
 offset_top = -63.0
 offset_right = -14.0
 offset_bottom = -23.0
 
 [node name="Key_5" type="Label" parent="but_4"]
-layout_mode = 0
 offset_left = 15.0
 offset_top = 8.0
 offset_right = 55.0
@@ -91,14 +81,12 @@ text = "4
 "
 
 [node name="but_5" type="TextureButton" parent="."]
-layout_mode = 0
 offset_left = -24.0
 offset_top = -63.0
 offset_right = 16.0
 offset_bottom = -23.0
 
 [node name="Key_5" type="Label" parent="but_5"]
-layout_mode = 0
 offset_left = 15.0
 offset_top = 8.0
 offset_right = 55.0
@@ -107,14 +95,12 @@ text = "5
 "
 
 [node name="but_6" type="TextureButton" parent="."]
-layout_mode = 0
 offset_left = 8.0
 offset_top = -63.0
 offset_right = 48.0
 offset_bottom = -23.0
 
 [node name="Key_5" type="Label" parent="but_6"]
-layout_mode = 0
 offset_left = 15.0
 offset_top = 8.0
 offset_right = 55.0
@@ -123,13 +109,11 @@ text = "6
 "
 
 [node name="but_8" type="TextureButton" parent="."]
-layout_mode = 0
 offset_left = -24.0
 offset_top = -40.0
 offset_right = 16.0
 
 [node name="Key_5" type="Label" parent="but_8"]
-layout_mode = 0
 offset_left = 15.0
 offset_top = 8.0
 offset_right = 55.0
@@ -138,13 +122,11 @@ text = "8
 "
 
 [node name="but_7" type="TextureButton" parent="."]
-layout_mode = 0
 offset_left = -54.0
 offset_top = -40.0
 offset_right = -14.0
 
 [node name="Key_5" type="Label" parent="but_7"]
-layout_mode = 0
 offset_left = 15.0
 offset_top = 8.0
 offset_right = 55.0
@@ -153,13 +135,11 @@ text = "7
 "
 
 [node name="but_9" type="TextureButton" parent="."]
-layout_mode = 0
 offset_left = 8.0
 offset_top = -40.0
 offset_right = 48.0
 
 [node name="Key_5" type="Label" parent="but_9"]
-layout_mode = 0
 offset_left = 15.0
 offset_top = 8.0
 offset_right = 55.0
@@ -168,14 +148,12 @@ text = "9
 "
 
 [node name="but_10" type="TextureButton" parent="."]
-layout_mode = 0
 offset_left = -24.0
 offset_top = -19.0
 offset_right = 16.0
 offset_bottom = 21.0
 
 [node name="Key_5" type="Label" parent="but_10"]
-layout_mode = 0
 offset_left = 15.0
 offset_top = 8.0
 offset_right = 55.0
@@ -184,14 +162,12 @@ text = "0
 "
 
 [node name="but_Del" type="TextureButton" parent="."]
-layout_mode = 0
 offset_left = -54.0
 offset_top = -16.0
 offset_right = -14.0
 offset_bottom = 24.0
 
 [node name="Key_5" type="Label" parent="but_Del"]
-layout_mode = 0
 offset_left = 5.0
 offset_top = 4.0
 offset_right = 45.0
@@ -200,14 +176,12 @@ text = "Del
 "
 
 [node name="but_0" type="TextureButton" parent="."]
-layout_mode = 0
 offset_left = -55.0
 offset_top = -88.0
 offset_right = -15.0
 offset_bottom = -48.0
 
 [node name="Key_5" type="Label" parent="but_0"]
-layout_mode = 0
 offset_left = 15.0
 offset_top = 8.0
 offset_right = 55.0
@@ -216,14 +190,12 @@ text = "1
 "
 
 [node name="but_GO" type="TextureButton" parent="."]
-layout_mode = 0
 offset_left = 8.0
 offset_top = -16.0
 offset_right = 48.0
 offset_bottom = 24.0
 
 [node name="Key_5" type="Label" parent="but_GO"]
-layout_mode = 0
 offset_left = 9.0
 offset_top = 7.0
 offset_right = 49.0
@@ -233,19 +205,6 @@ text = "Go
 
 [node name="Camera2D" type="Camera2D" parent="."]
 zoom = Vector2(2, 2)
-
-[node name="but_Sair" type="TextureButton" parent="."]
-offset_left = -277.0
-offset_top = -155.0
-offset_right = -237.0
-offset_bottom = -115.0
-
-[node name="Key_5" type="Label" parent="but_Sair"]
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 23.0
-text = "Sair
-"
 
 [connection signal="pressed" from="but_2" to="." method="_on_but_2_pressed"]
 [connection signal="pressed" from="but_3" to="." method="_on_but_3_pressed"]
@@ -259,4 +218,3 @@ text = "Sair
 [connection signal="pressed" from="but_Del" to="." method="_on_but_del_pressed"]
 [connection signal="pressed" from="but_0" to="." method="_on_but_0_pressed"]
 [connection signal="pressed" from="but_GO" to="." method="_on_but_go_pressed"]
-[connection signal="pressed" from="but_Sair" to="." method="_on_but_sair_pressed"]
